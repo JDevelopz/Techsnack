@@ -1,0 +1,43 @@
+<%- include("partials/header") -%>
+
+<h1>home</h1>
+<p><%=blogText%></p>
+<%# for loop  %>
+  <% posts.forEach(function(post){ %>
+
+  <h1><%=post.title%></h1>
+  <p><%=post.content.substring(0, 100) + " ..."%>
+  <a href="/posts/<%= post._id %>">Read more</a></p>
+
+<% }); %>
+  <%# // subString makes content max 100 characters %>
+  <%# href redirect to /posts/ + post.title as blogposts shortend as post as element %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include("partials/footer") -%>

@@ -1,0 +1,3 @@
+<% for (var i=0; i<blogposts.length; i++) { %>
+<%= console.log(blogposts[i].title) %>
+<%  }; %>
